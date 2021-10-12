@@ -289,6 +289,7 @@ export const mouseMoveEvent = function (evt) {
       tlist.replaceItem(translateOrigin, N - 1);
     }
 
+    svgCanvas.textActions.init();
     svgCanvas.selectorManager.requestSelector(selected).resize();
     svgCanvas.call('transition', selectedElements());
 
